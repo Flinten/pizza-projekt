@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="Pizza@localhost">
+  <database-model serializer="dbm" rdbms="MYSQL" format-version="4.0">
+    <root id="1"/>
+    <schema id="2" parent="1" name="pizza">
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="3" parent="1" name="ap"/>
+    <schema id="4" parent="1" name="car"/>
+    <schema id="5" parent="1" name="carrental"/>
+    <schema id="6" parent="1" name="information_schema"/>
+    <schema id="7" parent="1" name="kailua"/>
+    <schema id="8" parent="1" name="mandatory"/>
+    <schema id="9" parent="1" name="mysql"/>
+    <schema id="10" parent="1" name="performance_schema"/>
+    <schema id="11" parent="1" name="sakila"/>
+    <schema id="12" parent="1" name="sys"/>
+    <schema id="13" parent="1" name="world"/>
+    <table id="14" parent="2" name="table_ansat"/>
+    <table id="15" parent="2" name="table_order_historik"/>
+    <table id="16" parent="2" name="table_produkt"/>
+    <column id="17" parent="14" name="ansat_Id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="18" parent="14" name="ansat_Login_Id">
+      <Position>2</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="19" parent="14" name="ansat_Login_kodeord">
+      <Position>3</Position>
+      <DataType>varchar(30)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="20" parent="14" name="ansat_Fornavn">
+      <Position>4</Position>
+      <DataType>varchar(30)|0</DataType>
+    </column>
+    <column id="21" parent="14" name="ansat_Efternavn">
+      <Position>5</Position>
+      <DataType>varchar(30)|0</DataType>
+    </column>
+    <column id="22" parent="14" name="ansat_Adresse">
+      <Position>6</Position>
+      <DataType>varchar(30)|0</DataType>
+    </column>
+    <column id="23" parent="14" name="ansat_By">
+      <Position>7</Position>
+      <DataType>varchar(30)|0</DataType>
+    </column>
+    <column id="24" parent="14" name="ansat_Postnummer">
+      <Position>8</Position>
+      <DataType>int(4)|0</DataType>
+    </column>
+    <column id="25" parent="14" name="ansat_Telefon">
+      <Position>9</Position>
+      <DataType>int(11)|0</DataType>
+    </column>
+    <index id="26" parent="14" name="ansat_Login_Id">
+      <ColNames>ansat_Login_Id</ColNames>
+      <Unique>1</Unique>
+    </index>
+    <key id="27" parent="14" name="PRIMARY">
+      <ColNames>ansat_Id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <key id="28" parent="14" name="ansat_Login_Id">
+      <ColNames>ansat_Login_Id</ColNames>
+      <UnderlyingIndexName>ansat_Login_Id</UnderlyingIndexName>
+    </key>
+    <column id="29" parent="15" name="order_id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="30" parent="15" name="order_date">
+      <Position>2</Position>
+      <DataType>date|0</DataType>
+    </column>
+    <column id="31" parent="15" name="order_price">
+      <Position>3</Position>
+      <DataType>double|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="32" parent="15" name="PRIMARY">
+      <ColNames>order_id</ColNames>
+      <Primary>1</Primary>
+    </key>
+    <column id="33" parent="16" name="produkt_Id">
+      <Position>1</Position>
+      <DataType>int(11)|0</DataType>
+      <NotNull>1</NotNull>
+      <SequenceIdentity>1</SequenceIdentity>
+    </column>
+    <column id="34" parent="16" name="produkt_Navn">
+      <Position>2</Position>
+      <DataType>varchar(30)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="35" parent="16" name="produkt_Type">
+      <Position>3</Position>
+      <DataType>enum(&apos;Drikkevare&apos;, &apos;Tilbehør&apos;)|0</DataType>
+    </column>
+    <column id="36" parent="16" name="produkt_Pris">
+      <Position>4</Position>
+      <DataType>double|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <key id="37" parent="16" name="PRIMARY">
+      <ColNames>produkt_Id</ColNames>
+      <Primary>1</Primary>
+    </key>
+  </database-model>
+</dataSource>

@@ -1,0 +1,102 @@
+/*Lavet af alberte
+*/
+.root{
+    -fx-background-image: url("pizza-background-wallpaper-1.jpg");
+    -fx-background-repeat: no-repeat;
+}
+
+/* Hover effekt: https://www.w3schools.com/css/css3_buttons.asp */
+
+.button {
+    -fx--webkit-transition-duration: 0.4s;
+    -fx-transition-duration: 0.4s;
+    -fx-border-color: #D7E2A4;      /*grøn*/
+    -fx-background-radius: 20px;
+
+    -fx-border-radius: 20px;
+    -fx-background-color: white;
+}
+.button:hover {
+    -fx-background-color: #D7E2A4;  /*grøn*/
+    -fx-border-radius: 20px;
+    -fx-background-radius: 20px;
+}
+
+#logud{ /* sæt ind: btnLogud.setId("logud"); */
+    -fx-border-color: palevioletred;
+}
+
+#logud:hover {
+    -fx-background-color: palevioletred;
+    -fx-color: white;
+}
+
+#tilbage{ /*sæt ind: btnTilbage.setId("tilbage");*/
+    -fx-border-color: paleturquoise;
+}
+#tilbage:hover{
+    -fx-background-color: paleturquoise;
+    -fx-color: white;
+}
+
+.buttons{
+    -fx-padding: 10px 35px;
+    -fx-overflow:hidden;
+}
+
+.buttons a:visited {
+    -fx-font-family: FontAwesome;
+    -fx-content:"\f07a";
+    -fx-position: absolute;
+    -fx-top: 11px;
+    -fx-left: -30px;
+    -fx-transition: all 200ms ease;
+}
+
+.buttons hover:visited {
+    -fx-left: 7px;
+}
+
+.label{
+    -fx-text-fill: white;
+}
+
+.combo-box{
+    -fx-text-fill: white;
+}
+
+.check-box{
+    -fx-text-fill: white;
+}
+#border{
+    -fx-border-color: white;
+    -fx-border-width: 200%;
+    -fx-border-style: solid;
+}
+#border2{
+    -fx-border-color: white;
+    -fx-border-width: 200%;
+    -fx-border-style: solid;
+}
+#sletknap{ /* sæt ind: btnLogud.setId("logud"); */
+    -fx-border-color: palevioletred;
+}
+
+#sletknap:hover {
+    -fx-background-color: palevioletred;
+    -fx-color: white;
+}
+
+#betalknap{ /* sæt ind: btnLogud.setId("logud"); */
+    -fx-border-color: lawngreen;
+    -fx-background-color: lawngreen;
+}
+#fjernknap{ /* sæt ind: btnLogud.setId("logud"); */
+    -fx-background-color: cornflowerblue;
+}
+#sletknaporder{ /* sæt ind: btnLogud.setId("logud"); */
+    -fx-background-color: red;
+}
+
+
+
